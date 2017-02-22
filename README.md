@@ -29,6 +29,14 @@
 2. `chmod 755 install_fos_ubuntu1404_32bit.sh`
 3. `./install_fos_ubuntu1404_32bit.sh`
 
+### Issues?
+
+- After restart FOS-Streaming doesn't work anymore
+If Fos-Streaming is not starting, then your rc.local is doesn't function well. You can try first
+chmod +x /etc/rc.local. if that is also not working try to add it inside /etc/init.d/rc.local.
+/home/fos-streaming/fos/nginx/sbin/nginx_fos
+/home/fos-streaming/fos/php/sbin/php-fpm
+
 
 ### Change port of panel
 1. change port in webinterface -> Settings -> web Port
